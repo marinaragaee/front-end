@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
+wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<!--Google fonts-->
+
+<!--icon cdn-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<!--icon cdn-->
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="userprofile.css">
+    <script src="home.js" defer></script>
+    <title>Tech-Galaxy</title>
+
+</head>
+<body class="home">
+    <!--Header Section-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+           <div class="logo text-red fs-monserrat bold-600 fs-100">
+                TECH-GALAXY
+            </div> 
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil uil-times-circle"></i>
+        </button> <!--to open and navbar using js-->
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li><a class="active fs-100 fs-monserrat bold-500" href="home.html">Home</a></li>
+                <li><a class="fs-100 fs-monserrat bold-500" href="shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-monserrat bold-500" href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        </div>
+        <div class="header-login flex">
+            <a href="login.html"> <i class="uil uil-user"></i></a>
+            <i class="uil uil-search"></i>
+            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+
+            <!--Cart Box-->
+            <div id="cart-icon"  data-visible="false" class="cart-icon">
+                <div class="shopping flex">
+                   <p>Shopping Basket</p> 
+                    <i id="cross-btn" class="uil uil-times"></i>
+                </div>
+             <div class="cart bold-800 flex">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                    <p> Cart is Empty</p>
+                </div>
+            </div>
+            <div class="mobile-open-btn">
+                <i class="uil uil-bars"></i>
+            </div>
+
+        </div>
+        <div class="side-nav">
+            <div class="user">
+                <img src="Huwewi.jpg" alt="" class="user-img">
+                <div>
+                    <h2>Marina Emad</h2>
+                    <p>marina@gmail.com</p>
+                </div>
+            </div>
+            <ul>
+                <li><i class="uil uil-user img"></i><p>Profile</p></li>
+                <li><i class="uil uil-gift img"></i><p>Coupons</p></li>
+                <li><i class="uil uil-location-pin-alt img"></i><p>Addresses</p></li>
+            </ul>
+            <ul>
+                <li><i class="uil uil-sign-out-alt img"></i><p>Sign Out</p></li>
+            </ul>
+        </div>
+    </header>
+           <!--End of Header Section-->
+
+           <!--Hero Section-->
+        <main class="hero-section grid">
+            <div>
+            <h1 class="fs-200 fs-poppins ">Beats Solo 
+                <span class="big-wireless block lineheight fs-300 bold-900 fs-poppins">Wireless</span>
+                <span class="text-white uppercase lineheight2 bold-bolder fs-poppins fs-900">Headphone</span>
+                <!--image here-->
+            </h1>
+            </div>
+            <div class="hero-inner flex">
+                <div>
+                    <button class="large-btn bg-red text-white fs-poppins fs-50">Shop by Category</button>
+                </div>
+            </div>
+        </main>
+
+         <!--Products Section-->
+         <section class="product-section  ">
+             <!--Section 1-->
+            <div class="category bg-black grid">
+            <div>
+                <h3 class="text-white fs-50 fs-monserrat">Enjoy
+                     <span class="block fs-300 fs-poppins ">with</span>
+                      <span class="earphone uppercase fs-400 fs-monserrat bold-900 lineheight">Mobiles</span></h3>
+                <button class="product-btn large-btn text-white bg-red fs-monserrat">Browse</button>
+            </div> 
+            </div>
+              <!--Section 2-->
+            <div class="category bg-very-light-gray grid">
+                <div>
+                    <h3 class="text-white fs-50 fs-monserrat">Enjoy
+                         <span class="block fs-300 fs-poppins ">with</span>
+                          <span class="earphone uppercase fs-400 fs-monserrat bold-900 lineheight">Tablets</span></h3>
+                    <button class="product-btn large-btn text-dark-gray bg-white fs-monserrat">Browse</button>
+                </div> 
+                </div>
+                    <!--Section 3-->
+                    <div class="category bg-red grid">
+                        <div>
+                            <h3 class="text-white fs-50 fs-monserrat">Enjoy
+                                 <span class="block fs-300 fs-poppins ">with</span>
+                                  <span class="earphone uppercase fs-400 fs-monserrat bold-900 lineheight">Laptops</span></h3>
+                            <button class="product-btn large-btn text-red bg-white fs-monserrat">Browse</button>
+                        </div> 
+                        </div>
+                    <!--Section 4-->
+                    <div class="category bg-gray grid">
+                        <div>
+                            <h3 class="text-white fs-50 fs-monserrat">Enjoy
+                                 <span class="block fs-300 fs-poppins ">with</span>
+                                  <span class="earphone uppercase fs-400 fs-monserrat bold-900 lineheight">Ipads</span></h3>
+                            <button class="product-btn large-btn text-white bg-red fs-monserrat">Browse</button>
+                        </div> 
+                        </div>
+              
+                  
+                        <!--Section 5-->
+                    <div class="category bg-black grid">
+                        <div>
+                            <h3 class="text-white fs-50 fs-monserrat">Enjoy
+                                 <span class="block fs-300 fs-poppins ">with</span>
+                                  <span class="earphone uppercase fs-400 fs-monserrat bold-900 lineheight">Smart-Watches</span></h3>
+                            <button class="product-btn large-btn text-white bg-red fs-monserrat">Browse</button>
+                        </div> 
+                        </div>
+                        <!--Section 6-->
+                    <div class="category bg-very-light-gray grid">
+                        <div>
+                            <h3 class="text-white fs-50 fs-monserrat">Enjoy
+                                 <span class="block fs-300 fs-poppins ">with</span>
+                                  <span class="earphone uppercase fs-400 fs-monserrat bold-900 lineheight">Earbuds</span></h3>
+                            <button class="product-btn large-btn text-dark-gray bg-white fs-monserrat">Browse</button>
+                        </div> 
+                        </div>
+         </section>
+
+         <!--Services Section-->
+         <section class="service-section">
+            <div class="service">
+                <div class="service-info">
+                    <i class="uil uil-truck"></i>
+                    <h3 class="fs-poppins fs-200"> Free Shipping </h3>
+                    <p class="fs-monserrat fs-50 "> Free Shipping On All Orders</p>
+                </div>
+            </div>
+                <div class="service">
+                <div class="service-info">
+                    <i class="uil uil-money-bill"></i>
+                    <h3 class="fs-poppins fs-200"> Money Guarantee </h3>
+                    <p class="fs-monserrat fs-50 "> 30 Day Money Back</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <i class="uil uil-question-circle"></i>
+                    <h3 class="fs-poppins fs-200"> Online Support 24/7 </h3>
+                    <p class="fs-monserrat fs-50 "> Technical Support</p>
+                </div>
+                </div>
+                <div class="service">
+                <div class="service-info">
+                    <i class="uil uil-wallet"></i>
+                    <h3 class="fs-poppins fs-200"> Secure Payment</h3>
+                    <p class="fs-monserrat fs-50 "> All Cards Accepted</p>
+                </div>
+            </div>
+            
+         </section>
+         <!--Best Seller Section-->
+         <!--Heading-->
+         <section class="best-product container">
+            <h2 class="letter-spacing bold-bolder fs-300 fs-poppins "> Our Products</h2>
+            <p class="fs-monserrat fs-100"> Enjoy our Products </p>
+         </section>
+         <section class="best-Seller">
+             <!--======================-->
+             <div class="product grid">
+                <img src="applewatch.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Apple Watch Series 9</p>
+                <p class="fs-poppins bold-500">21,111LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+        
+              <!--======================-->
+              <div class="product grid">
+                <img src="charger.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Recci Mini Charger</p>
+                <p class="fs-poppins bold-500">549LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+
+              <!--======================-->
+              <div class="product grid">
+                <img src="laptop.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Macbook PRO M2</p>
+                <p class="fs-poppins bold-500">44,299LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+            
+              <!--======================-->
+              <div class="product grid">
+                <img src="tab.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Xiaomi Redmi Pad</p>
+                <p class="fs-poppins bold-500">9,900LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+
+              <!--======================-->
+              <div class="product grid">
+                <img src="powerbank.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Anker Magnatic Maggo</p>
+                <p class="fs-poppins bold-500">19,000LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+
+              <!--======================-->
+              <div class="product grid">
+                <img src="ipad.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Ipad Pro</p>
+                <p class="fs-poppins bold-500">12,000LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+
+              <!--======================-->
+              <div class="product grid">
+                <img src="oppo.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Oppo a58</p>
+                <p class="fs-poppins bold-500">7,444LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+
+              <!--======================-->
+              <div class="product grid">
+                <img src="iphone13.jpg" alt="">
+                <p class="fs-poppins bold-500 "> Iphone 13</p>
+                <p class="fs-poppins bold-500">31,555LE</p>
+                <!--==================-->
+                <div class="product-details grid bg-red">
+                    <i class="uil text-white uil-shopping-cart-alt"></i>
+                    <i class="uil text-white uil-heart"></i>
+                </div>
+                <!--==================-->
+            </div>
+            <!--==================-->
+
+         </section>
+
+            <!--Recent News-->
+            <section class="best-product container">
+                <h2 class="letter-spacing bold-bolder fs-300 fs-poppins ">Guarantees and Offers</h2>
+                <p class="fs-monserrat fs-100"> Guarante your Product and Buy them cheaply</p>
+             </section>
+             <section class="recent-news grid">
+                <div class="news grid">
+                    <img src="Huwewi.jpg" alt="">
+                    <div class="fs-monserrat fs-100 padding-inline flex">
+                        <p> May, 13 2024</p>
+                        <p> Just in Our Website</p>
+                    </div>
+                    <h2 class="fs-poppins padding-inline fs-200 bold-600"> Coupouns </h2>
+                    <p class="fs-monserrat padding-inline fs-100 ">Coupouns to customers who make a review .</p>
+                </div>
+                <div class="news grid">
+                    <img src="Huwewi.jpg" alt="">
+                    <div class="fs-monserrat fs-100 padding-inline flex">
+                        <p> May, 13 2024</p>
+                        <p> Just in Our Website</p>
+                    </div>
+                    <h2 class="fs-poppins padding-inline fs-200 bold-600"> Return Policy</h2>
+                    <p class="fs-monserrat padding-inline fs-100 ">You can return items you've purchased if they're not working out
+                        , but you will only pay shipping fees .
+                    </p>
+                </div>
+                <div class="news grid">
+                    <img src="Huwewi.jpg" alt="">
+                    <div class="fs-monserrat fs-100 padding-inline flex">
+                        <p> May, 13 2024</p>
+                        <p> Just in Our Website</p>
+                    </div>
+                    <h2 class="fs-poppins padding-inline fs-200 bold-600"> Discounts!!</h2>
+                    <p class="fs-monserrat padding-inline fs-100 "> Discount 20% for customers making their first Purchase!!</p>
+                </div>
+             </section>
+             <!--Brands Section-->
+             <h2 class="letter-spacing bold-bolder fs-300 fs-poppins brand ">Available Brands</h2>
+             <section class="brands grid">
+                <div>
+                    <img src="Samsung_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Apple_4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Huwewi.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Realme_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Oppo_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Anker_2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Xiaomi_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Honor_3.jpg" alt="">
+                </div>
+             </section>
+             <!--footer section-->
+             <section class="footer grid">
+                <div class="footer-logo ">
+                   <p class="text-red fs-monserrat bold-600 fs-300"> Tech-Galaxy </p>
+                    <p class="fs-monserrat fs-100"> Lorem ipsum dolor sit, ametelvoluptas possimus quaerat veritatis
+                         culpa reiciendis
+                        </p>
+                        <div class="social-media flex">
+                            <i class="uil uil-facebook"></i>
+                            <i class="uil uil-instagram"></i>
+                            <i class="uil uil-twitter"></i>
+                            <i class="uil uil-linkedin"></i>
+                        </div>
+              </div>
+                <div class="footer-menu grid">
+                    <h3 class="fs-poppins fs-200 bold-800">Quick Links</h3>
+                    <ul>
+                    <li><a class="fs-monserrat text-black fs-100" href="home.html">Home</a></li>
+                    <li><a class="fs-monserrat text-black fs-100" href="shop.html">Shop</a></li>
+                    <li><a class="fs-monserrat text-black fs-100" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact grid">
+                <h3 class="fs-poppins fs-200 bold-800"> Contact </h3>
+                <P class="fs-monserrat ">Lorem ipsum dolor sit amet 
+                    Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.
+                </P>
+            </div>
+            <div class="emails grid">
+                <h3 class="fs-poppins fs-200 bold-800"> Subscribe to our Email </h3>
+                <p class="updates fs-poppins fs-300 bold-800"> For Latest News & Updates</p>
+
+            <div class="inputField flex bg-gray">
+                <input type="email" placeholder="Enter your Email" class="fs-monserrat bg-gray">
+                <button class="bg-red text-white fs-poppins fs-50 "> Subscribe </button>
+
+            </div>
+          </div>
+             </section>
+
+             <!--Copy Right Section-->
+             <section class="copyRight">
+                <p class=" c-font fs-monserrat fs-100">
+                    © Tech-Galaxy For Electronics. All Rights Reserved
+                </p>
+             </section>
+             
+ 
+</body>
+</html>

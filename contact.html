@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
+wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<!--Google fonts-->
+
+<!--icon cdn-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<!--icon cdn-->
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="shop.css">
+<link rel="stylesheet" href="contact.css">
+<script src="shop.js" defer></script>
+    <script src="home.js" defer></script>
+    <title>Tech-Galaxy</title>
+
+</head>
+<body class="home">
+    <!--Header Section-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+           <div class="logo text-red fs-monserrat bold-600 fs-100">
+                TECH-GALAXY
+            </div> 
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil uil-times-circle"></i>
+        </button> <!--to open and navbar using js-->
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li><a class=" fs-100 fs-monserrat bold-500" href="home.html">Home</a></li>
+                <li><a class="fs-100 fs-monserrat bold-500" href="shop.html">Shop</a></li>
+                <li><a class=" active fs-100 fs-monserrat bold-500" href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        </div>
+        <div class="header-login flex">
+            <a href="login.html"> <i class="uil uil-user"></i></a>
+            <i class="uil uil-search"></i>
+            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+
+            <!--Cart Box-->
+            <div id="cart-icon"  data-visible="false" class="cart-icon">
+                <div class="shopping flex">
+                   <p>Shopping Basket</p> 
+                    <i id="cross-btn" class="uil uil-times"></i>
+                </div>
+             <div class="cart bold-800 flex">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                    <p> Cart is Empty</p>
+                </div>
+            </div>
+            <div class="mobile-open-btn">
+                <i class="uil uil-bars"></i>
+            </div>
+
+        </div>
+    </header>
+           <!--End of Header Section-->
+
+<!--Shop feature Section-->
+<div>
+    <section class="shop-feature bg-gray grid">
+       
+        <h2 class="fs-poppins fs-300 bold-700"> Contact Us </h2>
+    </div>
+    
+    </section>
+    <!--Shop feature Section-->
+
+        <!--Contact Section-->
+        <section class="contact-us grid">
+            <div class="contact-info">
+                <h1 class="fs-poppins text-red fs-200">Contact Us</h1>
+                <h3 class="fs-poppins text-black fs-400">Get In Touch</h3>
+                <p class="fs-monserrat fs-100">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+            <form action="#" class="contact-form grid">
+                <div class="grid">
+                <input type="text"  id="" class="bg-gray text-black fs-poppins" placeholder="Phone Number">
+            </div>
+            <div class="grid">
+                <input type="email"  id="" class="bg-gray text-black fs-poppins" placeholder="Your Email">
+            </div>
+            <div>
+                <textarea class="bg-gray text-black fs-poppins" rows="10" placeholder="Your Message Here"></textarea>
+            </div>
+            <div class="contact-btn">
+                <button class="large-btn bg-red text-white fs-poppins">Submit</button>
+            </div>
+            </form>
+        </section>
+            <!--Support Section-->
+            <section class="support-container grid">
+                <div class="support-info grid ">
+                    <div class="support-img grid ">
+                        <i class="uil uil-envelopes text-red fs-400 "></i>
+                    </div>
+                    <div>
+                        <p class="fs-100 fs-poppins"> <span class="fs-200 fs-poppins bold-700">Email:</span> marina@gmail.com</p>
+                        <p class="fs-poppins fs-100">info@sampleemail.com</p>
+                    </div>
+                </div>
+                <div class="support-info grid ">
+                    <div class="support-img grid ">
+                        <i class="uil uil-map-marker text-red fs-400"></i>
+                    </div>
+                    <div>
+                        
+                        <p class="fs-100 fs-poppins"> <span class="fs-200 fs-poppins bold-700">Location:</span> marina@gmail.com</p>
+                        <p class="fs-poppins fs-100">info@sampleemail.com</p>
+                    </div>
+                </div>
+                <div class="support-info grid ">
+                    <div class="support-img grid ">
+                        <i class="uil uil-phone-volume text-red fs-400 "></i>
+                    </div>
+                    <div>
+                        <p class="fs-100 fs-poppins"> <span class="fs-200 fs-poppins bold-700">Phone:</span> marina@gmail.com</p>
+                        <p class="fs-poppins fs-100">info@sampleemail.com</p>
+                    </div>
+                </div>
+                
+                
+            
+        </section>
+
+
+
+
+
+             <!--Brands Section-->
+             <h2 class="letter-spacing bold-bolder fs-300 fs-poppins brand ">Available Brands</h2>
+             <section class="brands grid">
+                <div>
+                    <img src="Samsung_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Apple_4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Huwewi.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Realme_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Oppo_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Anker_2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Xiaomi_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Honor_3.jpg" alt="">
+                </div>
+             </section>
+  
+             <!--Footer Section-->
+             <section class="footer grid">
+              <div class="footer-logo ">
+                 <p class="text-red fs-monserrat bold-600 fs-300"> Tech-Galaxy </p>
+                  <p class="fs-monserrat fs-100"> Lorem ipsum dolor sit, ametelvoluptas possimus quaerat veritatis
+                       culpa reiciendis
+                      </p>
+                      <div class="social-media flex">
+                          <i class="uil uil-facebook"></i>
+                          <i class="uil uil-instagram"></i>
+                          <i class="uil uil-twitter"></i>
+                          <i class="uil uil-linkedin"></i>
+                      </div>
+            </div>
+              <div class="footer-menu grid">
+                  <h3 class="fs-poppins fs-200 bold-800">Quick Links</h3>
+                  <ul>
+                  <li><a class="fs-monserrat text-black fs-100" href="#">Home</a></li>
+                  <li><a class="fs-monserrat text-black fs-100" href="#">About</a></li>
+                  <li><a class="fs-monserrat text-black fs-100" href="#">Shop</a></li>
+                  <li><a class="fs-monserrat text-black fs-100" href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="contact grid">
+              <h3 class="fs-poppins fs-200 bold-800"> Contact </h3>
+              <P class="fs-monserrat ">Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet
+                  Lorem ipsum dolor sit amet.
+              </P>
+          </div>
+          <div class="emails grid">
+              <h3 class="fs-poppins fs-200 bold-800"> Subscribe to our Email </h3>
+              <p class="updates fs-poppins fs-300 bold-800"> For Latest News & Updates</p>
+  
+          <div class="inputField flex bg-gray">
+              <input type="email" placeholder="Enter your Email" class="fs-monserrat bg-gray">
+              <button class="bg-red text-white fs-poppins fs-50 "> Subscribe </button>
+  
+          </div>
+        </div>
+           </section>
+  
+           <!--Copy Right Section-->
+           <section class="copyRight">
+              <p class=" c-font fs-monserrat fs-100">
+                  © Tech-Galaxy For Electronics. All Rights Reserved
+              </p>
+           </section>
