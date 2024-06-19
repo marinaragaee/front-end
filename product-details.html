@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
+wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<!--Google fonts-->
+
+<!--icon cdn-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<!--icon cdn-->
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="shop.css">
+<link rel="stylesheet" href="product-details.css">
+<script src="shop.js" defer></script>
+    <script src="home.js" defer></script>
+    <title>Tech-Galaxy</title>
+</head>
+<body class="home">
+    <!--Header Section-->
+    <header class="primary-header container flex">
+        <div class="header-inner-one flex">
+           <div class="logo text-red fs-monserrat bold-600 fs-100">
+                TECH-GALAXY
+            </div> 
+            <button class="mobile-close-btn" data-visible="false"
+            aria-controls="primary-navigation"><i class="uil uil-times-circle"></i>
+        </button> <!--to open and navbar using js-->
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li><a class=" fs-100 fs-monserrat bold-500" href="home.html">Home</a></li>
+                <li><a class=" active fs-100 fs-monserrat bold-500" href="shop.html">Shop</a></li>
+                <li><a class="fs-100 fs-monserrat bold-500" href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        </div>
+        <div class="header-login flex">
+            <a href="login.html" class="text-black"> <i class="uil uil-user"></i></a>
+            <i class="uil uil-search"></i>
+            <i id="cart-box" aria-controls="cart-icon" class="uil uil-shopping-bag"></i>
+
+            <!--Cart Box-->
+            <div id="cart-icon"  data-visible="false" class="cart-icon">
+                <div class="shopping flex">
+                   <p>Shopping Basket</p> 
+                    <i id="cross-btn" class="uil uil-times"></i>
+                </div>
+             <div class="cart bold-800 flex">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                    <p> Cart is Empty</p>
+                </div>
+            </div>
+            <div class="mobile-open-btn">
+                <i class="uil uil-bars"></i>
+            </div>
+
+        </div>
+    </header>
+     <!--End of Header Section-->
+    <div class="card">
+         <!--Slider Section-->
+          <section>
+           <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="laptop-7.jpg" alt="Product Image 1">
+                </div>
+                <div class="slide">
+                    <img src="laptop-7.jpg" alt="Product Image 2">
+                </div>
+                <div class="slide">
+                    <img src="laptop-7.jpg" alt="Product Image 3">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+     <!--End of Slider Section-->
+    <!--Product Details Section-->
+    <section class="product-content">
+        <div class="details">
+        <p class=" product-title fs-100 fs-monserrat bold-bolder">HP Laptop</p>
+        <p class="fs-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, unde?</p>
+    </div>
+    <!--Product rating Section-->
+    <div class="product-rating">
+        <p class="fs-monserrat fs-100 bold-bolder">Overall Rating :
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="star-half-alt"><path fill="#FFF23E" d="M22,10.1c0.1-0.5-0.3-1.1-0.8-1.1l-5.7-0.8L12.9,3c-0.1-0.2-0.2-0.3-0.4-0.4C12,2.3,11.4,2.5,11.1,3L8.6,8.2L2.9,9C2.6,9,2.4,9.1,2.3,9.3c-0.4,0.4-0.4,1,0,1.4l4.1,4l-1,5.7c0,0.2,0,0.4,0.1,0.6c0.3,0.5,0.9,0.7,1.4,0.4l5.1-2.7l5.1,2.7c0.1,0.1,0.3,0.1,0.5,0.1v0c0.1,0,0.1,0,0.2,0c0.5-0.1,0.9-0.6,0.8-1.2l-1-5.7l4.1-4C21.9,10.5,22,10.3,22,10.1z M15.8,13.6c-0.2,0.2-0.3,0.6-0.3,0.9l0.7,4.2l-3.8-2c-0.1-0.1-0.3-0.1-0.5-0.1V5.7l1.9,3.8c0.1,0.3,0.4,0.5,0.8,0.5l4.2,0.6L15.8,13.6z"></path></svg>
+    </div>
+    <div class="product-form">
+        <input type="text" placeholder="You Rate"  class="fs-monserrat ">
+        
+    </div>
+    <!-- End of Product rating Section-->
+     <!--Specifications Section-->
+    <section class="specifications">
+        <h3 class="fs-monserrat fs-100 bold-bolder">Product Specifications</h3>
+        <p class="fs-monserrat fs-100 bold-500"> Gaming Performance: <span class="fs-poppins bold-300">4.5 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        </span> </p>
+        <div class="product-form">
+            <input type="text" placeholder="You Rate"  class="fs-monserrat ">
+        </div>
+        
+        <p class="fs-monserrat fs-100 bold-500"> Work Performance: <span class="fs-poppins bold-300">3.6
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        </span> </p>
+        <div class="product-form">
+            <input type="text" placeholder="You Rate"  class="fs-monserrat ">
+            
+        </div>
+        <p class="fs-monserrat fs-100 bold-500"> Video Editing Performance: <span class="fs-poppins bold-400">2.8 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+        </span> </p>
+        <div class="product-form">
+            <input type="text" placeholder="You Rate"  class="fs-monserrat ">
+            
+        </div>
+    </section>
+     <!--End of Specifications Section-->
+</section>
+ <!--End of PRODUCT details Section-->
+  <!--Video Section-->
+</div>
+<div class="reviews-card">
+    <video width="640" height="360" controls class="video">
+        <source src="Morning Tea _ Funny Episodes _ Mr Bean Cartoon World.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>       
+    <!--Reviews Section-->
+      <!--Add-Reviews Section-->
+  <section class="add-reviews-section">
+    <textarea cols="30" rows="5" class="fs-monserrat" placeholder="Add Your Review"></textarea>
+  </section>
+  <!--End of Add-Reviews Section-->
+<section class="reviews-section">
+    <h3 class="fs-monserrat fs-100">Marina Emad</h3>
+    <p class="fs-monserrat fs-100 bold-500"> Rating: <span class="fs-poppins bold-300">4.5 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="star"><path fill="#fff23e" d="M17.56248,21.55957a1.00275,1.00275,0,0,1-.46531-.11475L12,18.76514,6.90283,21.44482a1.00019,1.00019,0,0,1-1.45117-1.0542l.97363-5.67578-4.12353-4.019a1.00033,1.00033,0,0,1,.5542-1.706l5.69873-.82813L11.103,2.99805a1.04173,1.04173,0,0,1,1.79394,0l2.54834,5.16357,5.69873.82813a1.00033,1.00033,0,0,1,.5542,1.706l-4.12353,4.019.97363,5.67578a1,1,0,0,1-.98586,1.169Z"></path></svg>
+    </span> </p>
+    <p class="fs-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</section>
+<!--End of Reviews Section-->  
+    </div>
+   
+         <!--Copy Right Section-->
+         <section class="copyRight">
+            <p class=" c-font fs-monserrat fs-100">
+                © Tech-Galaxy For Electronics. All Rights Reserved
+            </p>
+         </section>
+         <script src="script.js"></script>
+        </body>
+        </html>

@@ -1,0 +1,123 @@
+
+.slider-container {
+    position: relative;
+    max-width: 500px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Ensure container has rounded corners */
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%; /* Ensure the image takes up the full width of the slide */
+    height: 100%; /* Ensure the image takes up the full height of the slide */
+    display: block;
+    border-radius: 20px; /* Fully rounded corners for the images */
+    object-fit: cover; /* Cover the slide area */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(209, 202, 202, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 30%; /* Make buttons circular */
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#star{
+    width: 20px;
+    height: 20px;
+}
+#star-half-alt{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+input{
+    border: none;
+}
+input:focus {
+    outline: none; /* Removes the default outline */
+    border: none;  /* Removes the border */
+}
+
+.reviews-section{
+    margin-top: 10px;
+    width: 500px;
+    height: 150px;
+    box-shadow: 5px 5px 30px -6px hsl(var(--clr-black)/0.1); 
+    transition: none;
+    margin-left: 10px;
+}
+
+.add-reviews-section{
+     margin-top: 10px;
+    width: 500px;
+    height: 150px;
+    box-shadow: 5px 5px 30px -6px hsl(var(--clr-black)/0.1); 
+    transition: none;
+    margin-left: 10px;
+}
+.add-reviews-section textarea{
+    margin: 20px 10px 10px 20px;
+    border: none;
+}
+.add-reviews-section textarea:focus{
+    border: none;
+    outline: none;
+}
+
+
+@media screen and (min-width:992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.product-content{
+    margin-top: 40px;
+    margin-left: -100px;
+}
+
+
+
+/*Video*/
+video{
+    width: 400px;
+    height: 450px;
+}
+
+.reviews-section h3{
+    margin-left: 10px;
+}
